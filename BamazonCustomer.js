@@ -7,8 +7,8 @@ var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root", //Your username//
-    password: "", //Your password//
-    database: "Bamazon"
+    password: "poop", //Your password//
+    database: "Bamazon_DB"
 })
 
 //CREATES THE CONNECTION WITH THE SERVER AND MAKES THE TABLE UPON SUCCESSFUL CONNECTION//
