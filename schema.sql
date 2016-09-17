@@ -1,15 +1,17 @@
-CREATE DATABASE Bamazon_DB;
+CREATE DATABASE bamazon;
 
-USE Bamazon_DB;
+USE bamazon;
 
-CREATE TABLE Products(
-  ItemID INT NOT NULL AUTO_INCREMENT,
-  ProductName VARCHAR(100) NOT NULL,
-  DepartmentName VARCHAR(100) NOT NULL,
-  Price INT default 0,
-  StockQuantity INT default 0,
-  PRIMARY KEY (ItemID)
+CREATE TABLE products(
+  ItemID INT AUTO_INCREMENT NOT NULL,
+    ProductName VARCHAR(45) NOT NULL,
+    DepartmentName VARCHAR(45) NOT NULL,
+    Price DECIMAL(10,2) NOT NULL,
+    StockQuantity INT(10) NOT NULL,
+    primary key(ItemID)
 );
+
+select * from products;
 
 INSERT INTO Products (ProductName, DepartmentName, Price, StockQuantity)
 VALUES ('Yellow Sundress',"Women's Clothing",'125.00','157');
